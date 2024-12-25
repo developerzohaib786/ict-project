@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.copy-btn img {
+    border: none; 
+    background: transparent; 
+    width: 20px; 
+    height: 20px;
+    padding: 0; 
+    cursor: pointer; 
+    display: inline-block; 
+  }
+  main{
+    margin: 0; 
+    padding: 0; 
+    background-image: url('backhome.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    /* height: 100vh;  */
+    width: 100%;
+  }
+  
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(200, 194, 194);
+}
+ul{
+    background-color: rgb(129, 214, 129);
+    border-radius: 19px;
+    padding: 4px 9px;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0px 13px;
+}
+ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+}
+ul>li>a:hover{
+    color: grey;
+}
+img{
+    border: none;
+}
+main{
+    background-color: azure;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(200, 194, 194);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.submitbtn{
+    padding: 7px 11px;
+    border-radius: 19px;
+    border: none;
+    background-color: rgb(129, 214, 129);
+}
+.submitbtn:hover{
+    cursor: pointer;
+    background-color: rgb(200, 194, 194);
+}
+.input{
+    height: 30px;
+    border-radius: 19px;
+    border: 1px solid rgb(129, 214, 129);
+    padding: 4px 8px;
+    width: 30vw;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+td tr{
+    padding: 4px;
+}
+@media screen and (max-width: 800px) {
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .maincontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+  }
+  }
+  ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(129, 214, 129);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(200, 194, 194);
+    border-radius: 10px;
+}  
+td, tr,th, table{
+    border: 2px solid black;
+    padding: 5px 14px;
+    border-collapse: collapse;
+    background-color: white;
+}
+.submit-btn{
+    background-color: rgb(129, 214, 129);
+    color: rgb(250, 249, 249);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(200, 194, 194);
+    margin-top: 15px;
+
+}
+.submit-btn:hover{
+    color: grey;
+    cursor: pointer;
+    border: 1px solid rgb(129, 214, 129);
+}
+.input{
+    /* width: 70vw; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+
+}
+p{
+    padding: 4px 200px;
+}
+h1,h2,h3{
+    padding: 20px 1px;
+}
+.submit-btn2{
+    background-color: rgb(129, 214, 129);
+    color: rgb(250, 249, 249);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(200, 194, 194);
+    margin-top: 15px;
+
+}
+.submit-btn2:hover{
+    color: grey;
+    cursor: pointer;
+    border: 1px solid rgb(129, 214, 129);
+}
+.table{
+    overflow: scroll;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 2px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card-content .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.card-content .card-para {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card:hover:before {
+  transform: translateX(-100%);
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card:hover:after {
+  transform: translateX(100%);
+}
+p {
+  padding: 4px 30px !important;
+}
+
+
+
+
+
+
+
+
+  a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Professional blue color */
+    font-weight: 500; /* Slightly bold text */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  a:hover {
+    color: white; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  a:active {
+    color: white; /* Even darker blue for active state */
+    transform: scale(1); /* Reset scale on click */
+  }
+.maincontent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .maincontent .left{
+    width: 50%;
+    height: 199px;
+    font-size: 24px;
+    margin: 10px 8px;
+    padding: 10px 5px;
+  }
+  .maincontent .right{
+    background-color: transparent;
+    width: 50%;
+    margin: 10px 5px;
+    padding: 10px 5px;
+  }
+  #element{
+    color: #4158D0 ;
+  }
+  /* From Uiverse.io by codebykay101 */ 
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black ;
+}
+.container .glass svg {
+  font-size: 2.5em;
+  fill: grey;
+}
+
+  
