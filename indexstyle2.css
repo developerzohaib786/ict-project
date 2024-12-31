@@ -15,6 +15,7 @@
     display: inline-block; 
   }
   main{
+    height: 80vh;
     margin: 0; 
     padding: 0; 
     background-image: url('backhome.jpg'); 
@@ -53,16 +54,6 @@ ul>li>a:hover{
 img{
     border: none;
 }
-main{
-    background-color: azure;
-    display: flex;
-    gap: 20px;
-    padding-bottom: 20px;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-}
 footer{
     background-color: rgb(200, 194, 194);
     height: 7vh;
@@ -98,7 +89,26 @@ td tr{
     padding: 4px;
 }
 @media screen and (max-width: 800px) {
-  nav{
+  main{
+    height: auto;
+  } 
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .left p{
+    text-align: center;
+  
+   
+  } 
+  .ul{
+    padding: 3px;
+  }
+nav{
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +119,9 @@ td tr{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column
-  }
+    flex-direction: column;
+
+   }
   }
   ::-webkit-scrollbar {
     height: 10px;
@@ -146,15 +157,6 @@ td, tr,th, table{
 }
 .input{
     /* width: 70vw; */
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    height: 100%;
-
 }
 p{
     padding: 4px 200px;
@@ -295,13 +297,13 @@ p {
     width: 50%;
     height: 199px;
     font-size: 24px;
-    margin: 10px 8px;
+    /* margin: 10px 8px; */
     padding: 10px 5px;
   }
   .maincontent .right{
     background-color: transparent;
     width: 50%;
-    margin: 10px 5px;
+    /* margin: 10px 5px; */
     padding: 10px 5px;
   }
   #element{
@@ -309,6 +311,7 @@ p {
   }
   /* From Uiverse.io by codebykay101 */ 
 .container {
+  padding-bottom: 10px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -354,5 +357,62 @@ p {
   font-size: 2.5em;
   fill: grey;
 }
-
-  
+@media screen and (max-width: 600px) {
+  .maincontent {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+}
+@media screen and (max-width: 516px) {
+  .maincontent {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+}
+@media screen and (max-width: 450px) {
+  .maincontent {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14rem;
+}
+}
+@media screen and (max-width: 407px) {
+  .maincontent {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17rem;
+}
+}
+@media screen and (max-width: 371px) {
+  .maincontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23rem;
+}
+}  
+@media screen and (max-width: 323px) {
+  .maincontent {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 26rem;
+}
+}
