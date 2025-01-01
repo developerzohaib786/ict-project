@@ -162,6 +162,7 @@ p{
     padding: 4px 200px;
 }
 h1,h2,h3{
+    text-align: center;
     padding: 20px 1px;
 }
 .submit-btn2{
